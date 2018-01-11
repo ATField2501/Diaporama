@@ -25,12 +25,9 @@ feh -r -F -z -Z -D 5 /media/cagliostro/Mithril/Cagliostro_Images/Danse
 elif [ $1 = -h ]
 then
 echo -e "$VERT""Options = -s(sensible)."
-
+echo -e "$VERT""          -u(ultra-sensible)."
 
 else
-
 feh -r -F -z -Z -D 5 /media/cagliostro/Mithril/Cagliostro_Images/
-
-
 fi
 
