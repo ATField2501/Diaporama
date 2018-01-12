@@ -10,7 +10,8 @@ echo -e "$JAUNE""                                "
 echo -e "$JAUNE""       *****************        "
 echo -e "$JAUNE""       **   (;,,;)    **        "
 echo -e "$JAUNE""       *****************        "
-echo -e "$VERT""           DIAPORAMA             "
+echo -e "$VERT""           $0             "
+echo -e "$VERT""           $$             "
 
 echo -e "$VERT""- - - - - - - - - - - - - - - - -"
 echo -e "$JAUNE""Script de diaporama d'images...."
@@ -20,14 +21,24 @@ echo -e "$JAUNE""Script de diaporama d'images...."
 
 if [ $1 = -s ] 
 then
-feh -r -F -z -Z -D 5 /media/cagliostro/Mithril/Cagliostro_Images/Danse
+feh -r -F -z -Z -D 5 /Images/Sensible/
+
+if [ $1 = -s ] 
+then
+feh -r -F -z -Z -D 5 /Images/Ultra-Sensible/
 
 elif [ $1 = -h ]
 then
 echo -e "$VERT""Options = -s(sensible)."
 echo -e "$VERT""          -u(ultra-sensible)."
+echo -e "$VERT""          -n(normal)."
+
+elif [ $1 = -n ]
+then
+feh -r -F -z -Z -D 5 /Images/
+
 
 else
-feh -r -F -z -Z -D 5 /media/cagliostro/Mithril/Cagliostro_Images/
+feh -r -F -z -Z -D 5 /Images/
 fi
 
